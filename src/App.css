@@ -1,0 +1,1749 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+input:focus {
+  outline: 0 !important;
+}
+button:focus,
+input:focus {
+  /*border: none !important;
+  outline: none !important;*/
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #e9ecef !important;
+  cursor: not-allowed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+.loading div {
+  margin: auto;
+  max-height: 100%;
+}
+
+/* Header */
+
+.navbar-light {
+  background: #ebebeb;
+}
+
+.logoArea,
+.loginSignupAreaRight {
+  width: 230px;
+}
+.navMiddle {
+  width: 80%;
+  text-align: center;
+}
+.navMiddle ul {
+  display: inline-flex;
+}
+
+.navMiddle .navbar-nav li a {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-size: 15px;
+  padding: 0.5rem 19px !important;
+}
+
+.loginSignupAreaRight .navbar-nav li a {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.navbar-nav li a {
+  text-transform: uppercase;
+}
+
+.nav-link.alwaysActive {
+  background: #414141;
+  color: #fff !important;
+  padding: 0.5rem 30px !important;
+  font-size: 15px !important;
+  margin-left: 11px;
+}
+ul.navbar-nav.new {
+  float: right;
+  position: relative;
+}
+ul.navbar-nav.new li {
+  padding: 0px;
+  cursor: pointer;
+}
+ul.navbar-nav.new li span {
+  float: left;
+  padding: 9px 10px;
+}
+ul.navbar-nav.new li {
+  text-transform: capitalize;
+}
+ul.navbar-nav.new li span.downArrow {
+  font-size: 12px;
+  padding: 12px 13px 0px 4px;
+}
+ul.navbar-nav.new li span.avatar {
+  width: 40px;
+  height: 39px;
+  border-radius: 20px;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 0px;
+}
+ul.navbar-nav.new li span.avatar img {
+  width: 100%;
+  height: 100%;
+}
+.myAccountDropDown {
+  position: absolute;
+  background: #fff;
+  padding: 15px 0px;
+  top: 46px;
+  width: 170px;
+  display: none;
+  right: 0px;
+  -webkit-box-shadow: -2px 3px 24px 0px rgba(209, 209, 209, 1);
+  -moz-box-shadow: -2px 3px 24px 0px rgba(209, 209, 209, 1);
+  box-shadow: -2px 3px 24px 0px rgba(209, 209, 209, 1);
+}
+.myAccountDropDown.show {
+  display: block;
+  z-index: 1;
+}
+.myAccountDropDown a {
+  display: block;
+  padding: 6px 12px !important;
+}
+.myAccountDropDown a:hover {
+  background: #ebebeb;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  position: absolute;
+  right: 12px;
+  top: -7px;
+}
+.myAccountDropDown span {
+  float: none !important;
+  padding: 0px 10px 0 0 !important;
+  display: inline-block;
+  width: 28px;
+  text-align: center;
+}
+.myAccountDropDown em {
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+/* Home page banner */
+.bannerHome {
+  background: #ebebeb;
+  clear: both;
+  overflow: hidden;
+}
+.leftTextArea {
+  float: left;
+  width: 45%;
+  padding-top: 63px;
+}
+.bannerImageArea {
+  float: left;
+  width: 50%;
+}
+p.monthlyPrice span {
+  color: #1e1e1e;
+  font-size: 25px;
+  display: block;
+}
+p.monthlyPrice {
+  color: #eb6469;
+  font-size: 38px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin: 94px 0 28px 0;
+  padding: 10px 45px 10px 0;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  display: inline-block;
+}
+p.bestJewelry {
+  color: #393939;
+  font-size: 55px;
+  font-family: "Cinzel", serif;
+  line-height: 70px;
+}
+p.bestJewelry span {
+  color: #eb6469;
+  font-size: 66px;
+  font-weight: 700;
+  display: block;
+}
+.getStratedButton {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  background: #414141;
+  width: 295px;
+  height: 60px;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+
+/* Home page banner */
+
+/* How it works */
+.howItWorksSection {
+  padding: 40px 20px;
+}
+.howItWorksSection p {
+  margin: 17px 0;
+}
+.underline {
+  display: table;
+  margin: 0 auto;
+  width: 70px;
+  height: 1px;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #000;
+}
+.howItWorks {
+  padding: 56px 0;
+  text-align: center;
+}
+.howItWorks h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+}
+.howItWorks p.number {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  color: #000;
+  margin: 0px;
+}
+.howItWorks p.firstText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #000;
+  min-height: 80px;
+}
+.howItWorksImageArea {
+  height: 143px;
+  padding: 10px 0;
+}
+/* How it works */
+
+/* subscriptionBoxArea */
+.subscriptionBoxArea {
+  background: #f6ece3;
+  min-height: 414px;
+  position: relative;
+}
+.subscriptionBoxArea h4 {
+  font-family: "Cinzel", serif;
+  font-size: 35px;
+  color: #000;
+}
+.subscriptionBoxArea p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #5b5757;
+  margin-bottom: 25px;
+}
+.subscriptionWomenImage {
+  float: left;
+}
+.subscriptionWomenImage img {
+  max-width: 560px;
+}
+.subscriptionBoxAreaLine {
+  width: 70px;
+  height: 1px;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+.subscriptionText {
+  float: left;
+  max-width: 535px;
+  margin: 41px 0 0 46px;
+}
+.fixedRingArea {
+  position: absolute;
+  bottom: -99px;
+  right: 0px;
+}
+/* subscriptionBoxArea */
+
+/* benefitArea */
+.benefitArea {
+  padding: 86px 0;
+}
+.benefitArea .underline {
+  margin-bottom: 60px;
+}
+.benefitArea h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+}
+.benefirSection {
+  text-align: center;
+}
+.benefirSection img {
+  max-width: 100%;
+}
+.benefirSection h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  color: #000;
+  padding: 27px 0 0px 0;
+  line-height: 25px;
+  min-height: 90px;
+}
+.benefirSection p {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #686868;
+}
+
+/* pricing home */
+.pricingArea {
+  background: #f1f1f1;
+  padding: 40px 0;
+}
+.pricingArea h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+}
+.pricingArea .underline {
+  margin-bottom: 40px;
+}
+.pricingHomeSection.noBorder {
+  border-left: none;
+}
+.pricingHomeSection {
+  clear: both;
+  overflow: hidden;
+  padding: 25px 0px 25px 21px;
+  border-left: 1px solid #cdcdcd;
+}
+.imageAreaPricing {
+  float: left;
+}
+.pricingTextArea {
+  float: left;
+  max-width: 207px;
+  padding-left: 14px;
+}
+.pricingTextArea h5 {
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+}
+.pricingTextArea p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6a6464;
+}
+.opacity70 {
+  opacity: 0.7;
+}
+.opacity50 {
+  opacity: 0.5;
+}
+
+/* footer */
+footer {
+  background: #2e2c2c;
+  border-bottom: 1px solid #444242;
+}
+.footerTopArea {
+  clear: both;
+  padding: 50px 0 42px 0px;
+  overflow: hidden;
+  border-bottom: 1px solid #444242;
+}
+.footerLogoArea {
+  float: left;
+  width: 20%;
+}
+.newsLetterArea {
+  float: left;
+  width: 60%;
+  padding: 0 58px 0 30px;
+}
+.newsLetterArea h5 {
+  font-size: 23px;
+  color: #fff;
+  font-family: "Cinzel", serif;
+}
+.newsLetterArea p {
+  font-size: 17px;
+  color: #ababab;
+  font-family: "Montserrat", sans-serif;
+}
+.emailSignupField {
+  background: #fff;
+  height: 56px;
+  float: left;
+  padding: 0 0 0 13px;
+  min-width: 294px;
+  border: none;
+}
+.emailSubscribeButton {
+  background: #ff5c61;
+  width: 176px;
+  height: 56px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+
+.contactUs {
+  float: left;
+  width: 20%;
+}
+.contactUs h5 {
+  font-size: 23px;
+  color: #fff;
+  font-family: "Cinzel", serif;
+}
+.contactUs p {
+  font-size: 17px;
+  color: #ababab;
+  font-family: "Montserrat", sans-serif;
+}
+ul.socialMedia {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+ul.socialMedia li {
+  float: left;
+  color: #949494;
+  width: 42px;
+  border: 1px solid #949494;
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+  padding: 8px 3px;
+  margin-right: 10px;
+}
+ul.socialMedia li:hover {
+  border: 1px solid #fff;
+}
+ul.socialMedia li a {
+  display: block;
+}
+ul.socialMedia li a i {
+  color: #949494;
+  font-size: 23px !important;
+}
+ul.socialMedia li:hover a i {
+  color: #fff !important;
+}
+
+ul.terms {
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+  padding: 17px 0 0 0;
+}
+ul.terms li {
+  float: left;
+}
+ul.terms li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #797979;
+  padding: 0px 14px;
+  display: block;
+  text-transform: uppercase;
+  border-right: 1px solid #797979;
+  line-height: 14px;
+}
+ul.terms li a.last-child {
+  border-right: none;
+}
+ul.terms li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+p.copyRightText {
+  font-size: 14px;
+  color: #797979;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Quiz */
+ul.answer {
+  display: table;
+  margin: 20px auto;
+  list-style-type: none;
+  padding: 0px;
+  max-width: 950px;
+}
+ul.answer li {
+  float: left;
+  width: 180px;
+  margin: 0px 5px;
+}
+ul.answer li span.img {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  text-align: center;
+  border: 2px solid #fff;
+  background: #fff;
+}
+
+ul.answer li label.selected span.img {
+  border: 2px solid #ff5c61;
+}
+ul.answer li p {
+  color: #5a5759 !important;
+  font-size: 18px !important;
+  -webkit-border-radius: 15%;
+  margin: 10px auto !important;
+  font-weight: 400 !important;
+  text-align: center;
+}
+/* .show {
+  display: none;
+  -webkit-transition: display 2s; 
+  transition: display 2s;
+} */
+.quizArea {
+  padding: 80px 0 0 0;
+  display: none;
+  -webkit-transition: display 2s; /* Safari */
+  transition: display 2s;
+}
+.quizArea.show {
+  display: block;
+  -webkit-transition: display 2s; /* Safari */
+  transition: display 2s;
+}
+.quizArea h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.quizArea h3 span {
+  color: #ff5c61;
+}
+.quizButtonArea {
+  text-align: center;
+  margin: 20px 0 80px 0;
+}
+.quiz_backButton {
+  background: #d0d0d0;
+}
+.quiz_nextButton {
+  background: #dc2e7e;
+}
+.quiz_backButton,
+.quiz_nextButton {
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 134px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  margin: 0 10px;
+}
+/* label.selected span.img {
+  border: 1px solid #dc2e7e !important;
+} */
+label.selected div.overlay_ansN {
+  display: block !important;
+}
+
+ul.answer li div.overlay_ansN {
+  position: absolute;
+  border-radius: 0%;
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 5%;
+  /*border: 2px solid rgba(251, 121, 125, 0.8);*/
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 9999;
+  font-size: 16px;
+  display: none;
+}
+ul.answer li div.overlay_ansN span {
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  top: 43%;
+}
+ul.answer li div.overlay_ansN i {
+  font-size: 40px;
+  color: #ff5c61;
+  margin: 0 29px;
+}
+ul.answer li label input {
+  display: none;
+}
+span.alert.alert-danger {
+  display: table;
+  margin: 0 auto;
+  font-size: 13px;
+  padding: 7px 18px;
+}
+ul.quiz_dot {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  top: 43px;
+  list-style-type: none;
+}
+ul.quiz_dot li {
+  background: #9a8e8e;
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+  float: left;
+  margin: 0 5px;
+}
+ul.quiz_dot li.active {
+  background: #c53276;
+}
+
+/* signupFormArea */
+.signupFormArea {
+  width: 590px;
+  margin: 100px auto;
+  padding: 48px 40px;
+  box-shadow: -2px 3px 24px 0px rgba(209, 209, 209, 1);
+}
+.signupFormArea h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  text-align: center;
+}
+.signupFormArea p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  margin: 5px 0;
+}
+.signupFormArea p.termsCondition {
+  margin-bottom: 10px;
+}
+.signupFormArea label {
+  display: block;
+  width: 100%;
+}
+.signupFormArea form {
+  margin-top: 25px;
+}
+.signupFormArea input.signupForm {
+  border-radius: 3px !important;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da !important;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.signupFormArea p.orText {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #c9c4c4;
+  line-height: 0.1em;
+  margin: 25px 0 24px;
+}
+p.success-text {
+  color: #01731c;
+}
+.react-datepicker-wrapper {
+  display: block;
+  width: 100%;
+}
+.react-datepicker__input-container {
+  position: relative;
+  display: block;
+}
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  height: 43px;
+}
+
+ul.mobileMenu {
+  display: none;
+}
+
+/* subscribeArea */
+.subscribeArea {
+  padding: 40px 0;
+}
+.subscribeArea .form-check {
+  margin-bottom: 10px;
+  line-height: 21px;
+}
+.valid-feedback.showMSG {
+  display: block;
+}
+.mainSubscribeArea {
+  padding: 0 20px;
+  clear: both;
+  overflow: hidden;
+}
+.subscriptionForm {
+  margin-bottom: 20px;
+}
+.subscriptionForm h3 {
+  color: #737373;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 12px !important;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0px !important;
+  padding-bottom: 10px;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+}
+.subscribeArea .form-check label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px !important;
+  font-weight: 500 !important;
+  color: #e72d9e !important;
+  cursor: pointer;
+}
+.subscribeArea h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+.subscribeArea h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.subscribeArea p {
+  margin: 20px 0;
+}
+.subscribe_img {
+  float: left;
+  max-width: 58%;
+  margin-right: 35px;
+}
+.subscribe_right {
+  float: left;
+  width: 465px;
+}
+.subscribe_img img {
+  max-width: 100%;
+}
+.subscribe_right h1 {
+  font-family: "Cinzel", serif;
+  font-size: 33px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.subscribe_right h1 span {
+  color: #ff5c61;
+  font-weight: 600;
+}
+.subscribe_right .commonPlanArea {
+  display: none;
+}
+.commonPlanAreaMain .commonPlanArea:first-child {
+  display: block !important;
+}
+.commonPlanArea input {
+  display: none;
+}
+.commonPlanArea label {
+  height: 156px;
+  background: #f5f4f9;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 5px solid #f5f4f9;
+}
+.commonPlanArea label.active {
+  border: 5px solid #c3c1c1;
+}
+.commonPlanArea label .price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-weight: 600;
+  color: #000;
+}
+.commonPlanArea label .planText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #000;
+  margin: 9px 0;
+}
+.commonPlanArea label .planDetails {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #454545;
+  margin: 5px 0;
+}
+.subscribe_button:disabled {
+  opacity: 0.3;
+}
+.subscribe_button {
+  margin-left: 0 !important;
+  margin-top: 15px;
+  margin-bottom: 10px !important;
+  width: 100% !important;
+  border-radius: 0;
+  -moz-border-radius: 5px;
+  background: #000;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 18px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.valid-feedback.showMSG p {
+  font-size: 20px;
+  margin: 5px 0;
+  font-size: 13px;
+}
+.valid-feedback.showMSG p span.amountDiscount {
+  float: right;
+}
+.couponApplied p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+.couponApplied {
+  width: 100%;
+}
+.couponApplied p span.couponRemoved {
+  float: right;
+  color: red;
+  cursor: pointer;
+}
+p.instructionText {
+  font-size: 12px;
+  color: #454545;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 2px 0;
+}
+p.termsSubs {
+  font-size: 12px;
+  color: #454545;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.couponCodeApply .invalid-feedback {
+  font-size: 13px;
+}
+.couponCodeApply input {
+  float: left;
+  width: 68% !important;
+  border: 1px solid #ccc;
+  height: 37px;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  font-size: 14px !important;
+}
+.couponCodeApply input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ccc !important;
+}
+.couponCodeApply button {
+  float: left;
+  background: #f5faff;
+  border: 1px solid #000 !important;
+  font-size: 18px;
+  width: 28%;
+  height: 37px !important;
+  line-height: 37px !important;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  width: auto !important;
+  border-radius: 0px !important;
+}
+.couponCodeApply button:focus {
+  outline: none !important;
+  border: none !important;
+}
+.apply_copuponButton {
+}
+.apply_copuponButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed !important;
+}
+
+/* Shipping address */
+.card {
+  border: none !important;
+}
+.card-title {
+  background: #000;
+  padding: 5px 12px;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 0 !important;
+  position: relative;
+}
+.card-body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.stripeButton {
+  white-space: nowrap;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  background-color: #e85861;
+  text-decoration: none;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  margin-top: 10px;
+}
+.stripeButton:disabled {
+  background-color: #f07b83;
+  cursor: default !important;
+}
+.stripeButton:disabled:hover {
+  background-color: #f07b83;
+  cursor: default !important;
+}
+.stripeButton:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #e85861;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.shippingAddress {
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.shippingAddress input.form-control {
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  /* box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px; */
+  border: 1px solid #ece8e8;
+  outline: 0;
+  border-radius: 4px;
+  background: white;
+}
+.shippingAddress input.form-control:focus {
+  outline: none !important;
+}
+
+.dashed {
+  margin: 11px 11px;
+  padding: 5px 10px;
+  text-align: center;
+  border-top: 1px dashed;
+}
+
+/* stripe area */
+.stripeArea {
+}
+
+span.stripePowerlogo {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  font-size: 19px;
+}
+
+.stripeArea .Checkout {
+  margin: 0 auto;
+  max-width: 800px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.stripeArea label {
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  display: block;
+}
+.card-title .fa {
+  margin-right: 8px;
+}
+
+p.message-onSubscribe {
+  font-size: 11px;
+  color: #6b7c93;
+}
+
+.stripeArea button {
+  width: 100%;
+  border-radius: 4px;
+  margin: 0px;
+  border-radius: 0px;
+  white-space: nowrap;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  background-color: #2e2c2c;
+  text-decoration: none;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.stripeArea form {
+}
+
+.stripeArea button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2e2c2c;
+}
+
+.stripeArea input,
+.stripeArea .StripeElement {
+  display: block;
+  margin: 10px 0 20px 0;
+  padding: 10px 14px;
+  font-size: 1em;
+  font-family: "Source Code Pro", monospace;
+  /*box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+    rgba(0, 0, 0, 0.0196078) 0px 1px 0px;*/
+  border: 1px solid #ece8e8;
+  outline: 0;
+  border-radius: 4px;
+  background: white;
+}
+
+.stripeArea input::placeholder {
+  color: #aab7c4;
+}
+
+.stripeArea input:focus,
+.stripeArea .StripeElement--focus {
+  box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+    rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.stripeArea .StripeElement.IdealBankElement,
+.stripeArea .StripeElement.PaymentRequestButton {
+  padding: 0;
+}
+.checkout .row {
+  margin-bottom: 0px !important;
+}
+
+/* Stripe */
+
+/* Style defines you best */
+p.questionAns {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0 15px 0 10px;
+}
+p.questionAns span {
+  font-weight: 500;
+  padding-left: 7px;
+  float: right;
+}
+.styleDefinesYou .table td:last-child,
+.styleDefinesYou .table th:last-child {
+  text-align: right;
+}
+.styleDefinesYou .table td,
+.styleDefinesYou .table th {
+  border-top: none;
+}
+
+.styleDefinesYou .table tr:last-child td,
+.styleDefinesYou .table tr:last-child th {
+  border-top: 1px solid #dee2e6;
+}
+
+.selectedBodyShape {
+  text-align: center;
+}
+.selectedBodyShape img {
+  max-width: 140px;
+}
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 43px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+.alert-dismissible {
+  padding-right: 1.25rem !important;
+}
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4c69ba;
+  background-image: linear-gradient(#4c69ba, #3b55a0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354c8c;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png")
+    6px 11px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5b7bd5;
+  background-image: linear-gradient(#5b7bd5, #4864b1);
+}
+
+.commonLoader {
+  display: table;
+  margin: 0 auto;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ff1c68;
+  transform-origin: 50% 50%;
+}
+
+p.question span {
+  color: #eb6469;
+}
+
+.mainContainer {
+  width: 100%;
+}
+.red_bangles {
+  position: absolute;
+  right: 0;
+  width: 330px;
+  bottom: 0;
+}
+.red_bangles img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* aboutUsContent */
+.aboutUsContent {
+  padding: 30px 0;
+}
+.aboutUsContent h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+.aboutUsContent h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.aboutUsContent p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 26px;
+}
+
+/* */
+.savedAddress {
+}
+.savedAddress p {
+}
+.savedAddress p span {
+}
+.StripeElement.StripeElement--invalid {
+  border: 1px solid #9e2146;
+}
+
+/* subscriptionTab */
+.commonPlanAreaMain {
+  /*padding: 0 30px;*/
+}
+.commonPlanAreaMain2 {
+  padding: 0 30px;
+}
+.subscriptionTab {
+}
+.subscriptionTab h3,
+.shippingAddTab h3,
+.bomTab h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+  margin: 62px 0 50px 0;
+}
+
+.subscriptionTab .shippingDetails {
+}
+
+.subscriptionTab .shippingDetails p span,
+.shippingAddTab .shippingDetails p span {
+  width: 50%;
+  display: inline-block;
+}
+
+.subscriptionTab .commonPlanArea,
+.shippingAddTab .commonPlanArea {
+  border: 5px solid #c3c1c1;
+  background: #f5f4f9;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 330px;
+  padding: 10px 15px;
+  float: left;
+}
+
+.subscriptionTab .commonPlanArea .price,
+.shippingAddTab .commonPlanArea .price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-weight: 600;
+  color: #000;
+}
+.subscriptionTab .commonPlanArea .planText,
+.shippingAddTab .commonPlanArea .planText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #000;
+  margin: 9px 0;
+}
+
+.endSubscription {
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 28px !important;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  ul.answer li {
+    width: 160px;
+  }
+  ul.answer li span.img {
+    width: 160px;
+    height: 160px;
+  }
+  .subscribe_img {
+    width: 58%;
+    padding-top: 76px;
+  }
+  .subscribe_right {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactUsForm {
+    width: 100% !important;
+  }
+  .navMiddle {
+    display: none;
+  }
+  .loginSignupAreaRight {
+    display: none;
+  }
+  .bannerImageArea {
+    display: none;
+  }
+  .leftTextArea {
+    width: 100%;
+    padding: 16px 20px 36px 20px;
+  }
+  .bannerImageArea img {
+    width: 100%;
+  }
+  .subscriptionWomenImage {
+  }
+  .subscriptionWomenImage img {
+    max-width: 100%;
+  }
+  p.monthlyPrice {
+    border: none;
+    margin: 0px;
+    font-size: 30px;
+  }
+  p.bestJewelry {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .getStratedButton {
+    width: 100%;
+    margin: 0 0 10px 0;
+    height: 45px;
+    font-size: 14px;
+  }
+  p.bestJewelry span {
+    font-size: 32px;
+  }
+
+  .howItWorks {
+    padding: 40px 0;
+  }
+  .howItWorksSection {
+    padding: 20px 20px 10px 20px;
+  }
+  .howItWorksSection p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  .howItWorksImageArea {
+    height: 100px;
+    padding: 10px 0;
+  }
+  .howItWorksImageArea img {
+    max-height: 100%;
+  }
+  .subscriptionBoxArea {
+    clear: both;
+    overflow: hidden;
+  }
+  .fixedRingArea {
+    display: none;
+  }
+  .subscriptionText {
+    margin: 0;
+    padding: 25px 25px;
+  }
+  .benefitArea {
+    padding: 26px 0;
+  }
+  .benefirSection img {
+    max-width: 100%;
+    height: 309px;
+    border: 1px solid #ccc;
+  }
+  .benefirSection h5 {
+    min-height: auto;
+  }
+  .pricingTextArea {
+    float: left;
+    max-width: 235px;
+    padding-left: 22px;
+  }
+  .pricingHomeSection.noBorder {
+    border: none;
+  }
+  .pricingHomeSection {
+    border-left: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  /* footer */
+  .footerTopArea {
+    padding: 32px 0 29px 0px;
+  }
+  .footerLogoArea {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .newsLetterArea {
+    width: 100%;
+    padding: 14px 0 0 6px;
+  }
+  .emailSubscribeButton {
+    width: 125px;
+    font-size: 14px;
+  }
+  .emailSignupField {
+    min-width: 198px;
+  }
+  .contactUs {
+    float: left;
+    width: 100%;
+    padding: 19px 0 0 7px;
+  }
+  .newsLetterArea h5,
+  .contactUs h5 {
+    font-size: 20px;
+  }
+  ul.terms li a {
+    font-size: 12px;
+    padding: 0px 6px;
+  }
+
+  /* Quiz */
+  ul.answer {
+    padding: 0px;
+  }
+  ul.answer li {
+    width: 160px;
+  }
+  ul.answer li span.img {
+    width: 160px;
+    height: 160px;
+  }
+  ul.answer li span.img img {
+    max-width: 100%;
+  }
+  .signupFormArea {
+    width: 100%;
+    margin: 21px auto;
+    padding: 10px 28px;
+    box-shadow: none;
+  }
+  .react-datepicker__input-container input {
+    border: 1px solid #ccc;
+  }
+
+  /* Mobile Menu */
+  .my-dropdown-slidedown {
+    display: block;
+    width: 100%;
+  }
+  ul.mobileMenu {
+    display: block;
+    padding: 0;
+    list-style-type: none;
+  }
+  ul.mobileMenu li a {
+    color: rgba(0, 0, 0, 0.7) !important;
+    padding: 10px 1rem;
+  }
+  ul.mobileMenu li a.nav-link.alwaysActive {
+    text-align: center;
+  }
+
+  .card-title {
+    text-align: left;
+  }
+
+  /* login page */
+  .loginFormArea {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    padding: 48px 28px;
+  }
+  ul.myAccountTab li {
+    float: left;
+    font-family: "Cinzel", serif;
+    font-size: 0.5rem;
+    color: #000;
+    padding: 9px 19px;
+    border-left: 1px solid #eb6469;
+    border-bottom: 1px solid #eb6469;
+    height: 55px;
+    line-height: 20px;
+    cursor: pointer;
+    width: 24.33%;
+    text-align: center;
+  }
+  .subscriptionTab h3,
+  .shippingAddTab h3 {
+    font-size: 23px;
+  }
+  p.accountName {
+    text-align: center;
+  }
+  span.downArrow2 {
+    position: absolute;
+    bottom: -16px;
+    display: none;
+    width: 42px;
+    height: 21px;
+    left: 50%;
+    margin-left: -21px;
+  }
+  .leftAreaProfile {
+    padding: 36px 0 0 0;
+  }
+  .rightAreaProfile {
+    border-left: none;
+    padding: 20px 0 20px 0;
+  }
+  .reTakeQuizButton.green {
+    float: left;
+    margin-left: 20px;
+  }
+  .profileQNA {
+    padding: 0px;
+    float: left;
+    margin: 0px 20px 10px 20px;
+    width: 100%;
+  }
+  .profileQNA ul.answer {
+    margin: 0px;
+    background: none;
+  }
+  p.naMeValuePair {
+    text-align: center;
+  }
+  .profileQNA ul.answer li {
+    background: #fff;
+    padding: 4px 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .reTakeQuizButton {
+    width: 300px;
+    display: table;
+    margin: 0 auto;
+  }
+  ul.answer li div.overlay_ansN span {
+    left: 20%;
+  }
+  .subscribe_img {
+    display: none;
+  }
+  .subscribe_right {
+    float: left;
+    width: 100%;
+  }
+  .commonPlanArea label {
+    height: auto;
+  }
+  p.termsSubs {
+    font-size: 13px;
+  }
+  .valid-feedback.showMSG p {
+    font-size: 17px;
+  }
+  .subscribe_right h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .stripeButton,
+  .stripeArea button {
+    width: 100%;
+  }
+  .subscriptionTab .commonPlanArea,
+  .shippingAddTab .commonPlanArea {
+    width: auto;
+  }
+}
+
+/* Contact Us page */
+.contactUsForm {
+  width: 70%;
+  margin: 0 auto;
+}
+.marginTop15 {
+  margin-top: 20px;
+}
+.contactUsForm .form-control {
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+.floatRight {
+  float: right;
+}
+
+.checkBoxAdd {
+  font-size: 12px;
+}
+
+.react-tel-input input[type="tel"] {
+  width: 100% !important;
+}
+.react-tel-input .selected-flag {
+  pointer-events: none;
+}
+
+.styleDefinesYou {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  height: 100%;
+}
+.card-title.textLeft {
+  text-align: left !important;
+}
+
+.socialLoginButton {
+  clear: both;
+  overflow: hidden;
+}
+.socialLoginButton button {
+  width: 47%;
+}
+.socialLoginButton button:first-child {
+  float: left;
+}
+.socialLoginButton button:last-child {
+  float: right;
+  margin-right: 3px;
+}
+
+.shippingDetails p {
+  margin: 0px 0 20px 0 !important;
+}
+
+.avatarUpload.form-control {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 93px;
+  top: 80px;
+  border-radius: 44px;
+  opacity: 0;
+}
+
+.contactUsButton.loginButton {
+  width: 200px;
+  clear: both;
+  overflow: hidden;
+}
+
+.card-title.textLeft.noBGcard {
+  background: none;
+  color: #000;
+  padding: 4px 0 0px 19px;
+  font-size: 17px;
+  margin: 0px !important;
+  border-radius: 0px;
+}
+.styleDefinesYou .card-body {
+  border: none;
+}
+
+.billingArea.hide {
+  /* height: 0px;
+  overflow: hidden; */
+}
+
+.stripeArea button:disabled {
+  background: #ccc;
+  cursor: auto;
+}
+.success {
+  color: #d4edda;
+}
